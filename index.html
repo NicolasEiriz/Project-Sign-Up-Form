@@ -24,7 +24,47 @@
   </section>
 
   <!-- Form section -->
-  <section class="form"></section>
+  <section class="form">
+    <section class="message">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+      <p>You <em>know</em> you want to</p>
+    </section>
 
+    <section class="formField">
+      <h3>Let's do this!</h3>
+      <form action="" method="post" id="form">
+        <div class="formControls">
+          <label for="userName">first name</label>
+          <input type="text" name="userName" id="userName" required></div>
+        <div class="formControls">
+          <label for="userLastName">last name</label>
+          <input type="text" name="userLastName" id="userLastName"></div>
+        <div class="formControls">
+          <label for="userEmail">email</label>
+          <input type="email" name="userEmail" id="userEmail" required></div>
+        <div class="formControls">
+          <label for="userTel">phone number</label>
+          <input type="tel" name="userTel" id="userTel">
+        </div>
+
+        <div class="formControls">
+          <label for="userPassword">password</label>
+          <input type="password" name="userPassword" id="userPassword">
+          <span class="error"></span>
+
+        </div>
+        <div class="formControls">
+          <label for="userPasswordCheck">confirm password</label>
+          <input type="password" name="userPasswordCheck" id="userPasswordCheck">
+        </div>
+        
+      </form>
+    </section>
+    <section class="createAccount">
+      <button type="submit" form="form" id="formButton">Create Account</button>
+      <p >Already have an account? <a href="#">Log in</a></p>
+    </section>
+  </section>
+<script src="./main.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 /* Logo section */
@@ -73,3 +74,42 @@ color: white;
 }
 
 /* Form Section */
+
+section.form{
+  display: flex;
+  flex-direction: column;
+}
+.form section{
+  border: 1px solid #000;
+  flex: 1;
+  /* height: 33.333%; */
+}
+
+/* Form controls */
+
+
+/* Style valid and invalid form controls */
+
+input:focus:valid{
+  outline-color: blue;
+  box-shadow: none;
+  border-radius: none;
+  
+}
+
+
+input:focus:invalid{
+  outline-color: red;
+  box-shadow: none;
+  border-radius: none;
+  
+}
+
+
+/* Password Error message */
+
+.error{
+  color: red;
+  font-size: .8rem;
+  display: block;
+}
