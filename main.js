@@ -7,9 +7,14 @@ const button = document.querySelector('#formButton')
 
 passwordConfirm.addEventListener('blur', (e)=>{
   if(password.value === passwordConfirm.value){
-    errorMessage.textContent = ''}
+    errorMessage.textContent = ''
+    password.classList.remove('passwordError')
+    passwordConfirm.classList.remove('passwordError')}
+
     else if(password.value !== passwordConfirm){
     errorMessage.textContent = '* Password do not match'
+    password.classList.add('passwordError')
+    passwordConfirm.classList.add('passwordError')
   }
   
 })
