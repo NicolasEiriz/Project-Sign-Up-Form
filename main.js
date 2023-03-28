@@ -5,8 +5,17 @@ const errorMessage = document.querySelector('.error')
 const button = document.querySelector('#formButton')
 
 
-button.addEventListener('click', (e)=>{
-  if(password.value !== passwordConfirm.value){
+passwordConfirm.addEventListener('blur', (e)=>{
+  if(password.value === passwordConfirm.value){
+    errorMessage.textContent = ''}
+    else if(password.value !== passwordConfirm){
     errorMessage.textContent = '* Password do not match'
   }
+  
 })
+
+// passwordConfirm.addEventListener('input', (e)=>{
+//   while (password.value !== passwordConfirm) {
+//     errorMessage.textContent = '* Password do not match'
+//   }
+//   })

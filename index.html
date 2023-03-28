@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,41 +8,57 @@
   <link rel="stylesheet" href="style.css">
   <title>Sign-Up Form</title>
 </head>
+
 <body>
 
 
   <!-- Image and logo section -->
   <section class="logo">
-    
-      <div class="odinLogo">
-        <img src="./images/odin-lined.png" alt="" srcset="">
-        <span>odin</span>
-      </div>
-      <p class="imageCredits">
-       Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href='https://unsplash.com/'>Unsplash</a>
+
+    <div class="odinLogo">
+      <img src="./images/odin-lined.png" alt="" srcset="">
+      <span>odin</span>
+    </div>
+    <p class="imageCredits">
+      Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+        href='https://unsplash.com/'>Unsplash</a>
     </p>
 
   </section>
 
   <!-- Form section -->
   <section class="form">
+
     <section class="message">
-      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
-      <p>You <em>know</em> you want to</p>
+
+      <div>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams. <br>Sign up <em>now</em> to get started</br></p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
     </section>
 
     <section class="formField">
+
       <h3>Let's do this!</h3>
-      <form action="" method="post" id="form">
+
+      <form action="" method="" id="form">
+
         <div class="formControls">
           <label for="userName">first name</label>
-          <input type="text" name="userName" id="userName" required></div>
+          <input type="text" name="userName" id="userName" required>
+        </div>
+
         <div class="formControls">
           <label for="userLastName">last name</label>
-          <input type="text" name="userLastName" id="userLastName"></div>
+          <input type="text" name="userLastName" id="userLastName">
+        </div>
+
         <div class="formControls">
           <label for="userEmail">email</label>
-          <input type="email" name="userEmail" id="userEmail" required></div>
+          <input type="email" name="userEmail" id="userEmail" required>
+        </div>
+
         <div class="formControls">
           <label for="userTel">phone number</label>
           <input type="tel" name="userTel" id="userTel">
@@ -53,18 +70,20 @@
           <span class="error"></span>
 
         </div>
+
         <div class="formControls">
           <label for="userPasswordCheck">confirm password</label>
           <input type="password" name="userPasswordCheck" id="userPasswordCheck">
         </div>
-        
+
       </form>
     </section>
     <section class="createAccount">
       <button type="submit" form="form" id="formButton">Create Account</button>
-      <p >Already have an account? <a href="#">Log in</a></p>
+      <p>Already have an account? <a href="#">Log in</a></p>
     </section>
   </section>
-<script src="./main.js"></script>
+  <script src="./main.js"></script>
 </body>
+
 </html>
