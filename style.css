@@ -60,6 +60,7 @@ section.logo .odinLogo span {
 section.logo .odinLogo img {
   min-width: 5vw;
   height: 13vh;
+  flex-shrink: 0;
 }
 
 section.logo .imageCredits {
