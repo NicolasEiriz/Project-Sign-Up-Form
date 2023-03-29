@@ -29,59 +29,55 @@
   <!-- Form section -->
   <section class="form">
 
-    <section class="message">
-
-      <div>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize
-          your deepest dreams. <br>Sign up <em>now</em> to get started</br></p>
-        <p>You <em>know</em> you want to.</p>
-      </div>
-    </section>
-
-    <section class="formField">
-
-      <h3>Let's do this!</h3>
-
-      <form action="" method="" id="form">
-
-        <div class="formControls">
-          <label for="userName">first name</label>
-          <input type="text" name="userName" id="userName">
+    <div class="container message">
+      <section class="message">
+        <div>
+          <p>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. <br>Sign up <em>now</em> to get started</br></p>
+          <p>You <em>know</em> you want to.</p>
         </div>
+      </section>
+    </div>
+    
+    <div class="container form">
+      <section class="formField">
+        <h3>Let's do this!</h3>
+        <form action="" method="" id="form">
+          <div class="formControls">
+            <label for="userName">first name</label>
+            <input type="text" name="userName" id="userName">
+          </div>
+          <div class="formControls">
+            <label for="userLastName">last name</label>
+            <input type="text" name="userLastName" id="userLastName">
+          </div>
+          <div class="formControls">
+            <label for="userEmail">email</label>
+            <input type="email" name="userEmail" id="userEmail" required>
+          </div>
+          <div class="formControls">
+            <label for="userTel">phone number</label>
+            <input type="tel" name="userTel" id="userTel">
+          </div>
+          <div class="formControls">
+            <label for="userPassword">password</label>
+            <input type="password" name="userPassword" id="userPassword">
+            <span class="error"></span>
+          </div>
+          <div class="formControls">
+            <label for="userPasswordCheck">confirm password</label>
+            <input type="password" name="userPasswordCheck" id="userPasswordCheck">
+          </div>
+        </form>
+      </section>
+    </div>
 
-        <div class="formControls">
-          <label for="userLastName">last name</label>
-          <input type="text" name="userLastName" id="userLastName">
-        </div>
-
-        <div class="formControls">
-          <label for="userEmail">email</label>
-          <input type="email" name="userEmail" id="userEmail" required>
-        </div>
-
-        <div class="formControls">
-          <label for="userTel">phone number</label>
-          <input type="tel" name="userTel" id="userTel">
-        </div>
-
-        <div class="formControls">
-          <label for="userPassword">password</label>
-          <input type="password" name="userPassword" id="userPassword">
-          <span class="error"></span>
-
-        </div>
-
-        <div class="formControls">
-          <label for="userPasswordCheck">confirm password</label>
-          <input type="password" name="userPasswordCheck" id="userPasswordCheck">
-        </div>
-
-      </form>
-    </section>
-    <section class="createAccount">
-      <button type="submit" form="form" id="formButton">Create Account</button>
-      <p>Already have an account? <a href="#">Log in</a></p>
-    </section>
+    <div class="container">
+      <section class="createAccount">
+        <button type="submit" form="form" id="formButton">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </section>
+    </div>
   </section>
   <script src="./main.js"></script>
 </body>
